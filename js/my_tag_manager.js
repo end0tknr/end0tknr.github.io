@@ -13,9 +13,9 @@
 var noscript_elm = $("<noscript></noscript>");
 var iframe_elm =
     $("<iframe></iframe>",{
-        iframe_elm.src   :"https://www.googletagmanager.com/ns.html?id=GTM-NFDXJK8",
-        iframe_elm.height:"0",
-        iframe_elm.width :"0",
-        iframe_elm.style :"display:none;visibility:hidden" });
+        src   :"https://www.googletagmanager.com/ns.html?id=GTM-NFDXJK8",
+        height:"0",
+        width :"0",
+        style :"display:none;visibility:hidden" });
 $("body").prepend( $(noscript_elm).append(iframe_elm) );
 
