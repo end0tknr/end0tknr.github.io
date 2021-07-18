@@ -119,15 +119,13 @@
       crossorigin="anonymous"></script>
     <script>
       function done_contact(){
-	  alert("START :"+location.pathname);
-
-	  ga('create','UA-36171996-3','auto');
-	  ga('send',
-	     'pageview',
-	     {'page': '/contact.html?status=comp',
-	      'title': 'conversion test'});
+	  var dummy_path = location.pathname + '?status=comp';
+	  alert("START :"+dummy_path);
 	  
-	  alert("DONE done_contact()!!");
+	  ga('create','UA-36171996-3','auto');
+	  ga('send', 'pageview', {'page': dummy_path});
+	  
+	  alert("DONE");
       }
     </script>
   </body>
