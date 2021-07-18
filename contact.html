@@ -120,10 +120,13 @@
     <script>
       function done_contact(){
 	  alert("START done_contact()!!");
-	  ga('send', {
-	      hitType: 'pageview',
-	      title: 'conversion test',
-	      page: '/contact.html?status=comp' });
+
+	  ga('create','UA-36171996-3','auto');
+	  ga('send',
+	     'pageview',
+	     {'page': '/contact.html?status=comp',
+	      'title': 'conversion test'});
+	  
 	  alert("DONE done_contact()!!");
       }
     </script>
